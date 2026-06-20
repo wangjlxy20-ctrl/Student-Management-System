@@ -1,19 +1,19 @@
 package com.wjl.entity;
 
-public class student {
+public class Student {
     private int id;
     private String sut_num;
     private String name;
     private int age;
 
-    public student(int id, String sut_num, String name, int age) {
+    public Student(int id, String sut_num, String name, int age) {
         this.id = id;
         this.sut_num = sut_num;
         this.name = name;
         this.age = age;
     }
 
-    public student() {
+    public Student() {
     }
 
     public int getId() {
@@ -46,5 +46,15 @@ public class student {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", sut_num='" + sut_num + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
